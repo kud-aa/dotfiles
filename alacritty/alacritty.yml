@@ -1,0 +1,73 @@
+font:
+    normal:
+      family: "Fira Code"
+    bold:
+      family: "Fira Code"
+    italic:
+      family: "Fira Code"
+    size: 10.5
+
+schemes:
+  ayu_dark: &ayu
+
+    primary:
+      background: '0x0A0E14'
+      foreground: '0xB3B1AD'
+
+    normal:
+      black:   '0x01060E'
+      red:     '0xEA6C73'
+      green:   '0x91B362'
+      yellow:  '0xF9AF4F'
+      blue:    '0x53BDFA'
+      magenta: '0xFAE994'
+      cyan:    '0x90E1C6'
+      white:   '0xC7C7C7'
+
+    bright:
+      black:   '0x686868'
+      red:     '0xF07178'
+      green:   '0xC2D94C'
+      yellow:  '0xFFB454'
+      blue:    '0x59C2FF'
+      magenta: '0xFFEE99'
+      cyan:    '0x95E6CB'
+      white:   '0xFFFFFF'
+
+  rose_pine_moon: &rose
+    primary:
+      background: '0x191724'
+      foreground: '0xe0def4'
+    cursor:
+      text: '0x191724'
+      cursor: '0x796268'
+    vi_mode_cursor:
+      text: '0x191724'
+      cursor: '0x796268'
+    line_indicator:
+      foreground: None
+      background: None
+    selection:
+      text: CellForeground
+      background: '0x2A2738'
+    normal:
+      black:   '0x6e6a86'
+      red:     '0xeb6f92'
+      green:   '0x9ccfd8'
+      yellow:  '0xf6c177'
+      blue:    '0x31748f'
+      magenta: '0xc4a7e7'
+      cyan:    '0xebbcba'
+      white:   '0xe0def4'
+    bright:
+      black:   '0x6e6a86'
+      red:     '0xeb6f92'
+      green:   '0x9ccfd8'
+      yellow:  '0xf6c177'
+      blue:    '0x31748f'
+      magenta: '0xc4a7e7'
+      cyan:    '0xebbcba'
+      white:   '0xe0def4'
+
+
+colors: *rose
