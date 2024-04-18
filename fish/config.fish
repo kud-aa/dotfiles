@@ -5,10 +5,10 @@ set --unexport LINES
 
 ## Bold colors
 set fish_color_command ccccc --bold
-set fish_color_error eb6f92
-set fish_color_quote 31748f
-set fish_color_cwd f6c177 --bold
-set fish_color_param c4a7e7
+set fish_color_error e84f4f
+set fish_color_quote b7ce42 
+set fish_color_cwd fea63c --bold
+set fish_color_param 66a9b9
 
 ## Aliases
 alias l "ls -lh --group-directories-first --color=always"
@@ -17,7 +17,6 @@ alias ll "ls -alh --color=always"
 alias grep "grep --color=auto -i"
 alias clone "git clone --depth 1"
 alias ra "ranger"
-alias ipa "ip -c a"
 
 alias euses "equery uses"
 alias cp "cp -iv"
@@ -34,8 +33,8 @@ set fish_key_bindings fish_vi_key_bindings
 ## Locale
 set -x LC_ALL en_US.utf8
 set -x EDITOR /usr/bin/nvim
-set -x BROWSER /usr/bin/chromium
-set -x TERM xterm-256color
+set -x PAGER /usr/bin/nvimpager
+set -x BROWSER /usr/bin/qutebrowser
 
 ## Start X at login
 if status --is-login
@@ -43,3 +42,5 @@ if status --is-login
     exec startx
   end
 end
+
+zoxide init --cmd cd fish | source
